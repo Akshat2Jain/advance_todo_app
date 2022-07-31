@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+div.wrapper{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* header */
+.header-box{
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #4d9497;
+}
+
+@media(max-width: 768px){
+  .header-box{
+      flex-direction: column;
+      justify-content: center;
+  }
+}
+
+.header-box .leftside{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media(max-width: 768px){
+  .header-box .leftside{
+      width: 100%;
+      flex-direction: column-reverse;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+}
+
+.header-box .leftside .img{
+  width: 170px;
+  height: 170px;
+}
+
+.header-box .leftside .img img{
+  width: 100%;
+  height: 100%;
+}
+
+.header-box .leftside .content{
+  color: #fff;
+}
+
+.header-box .leftside .content .heading-big{
+  font-size: 42px;
+}
+
+.header-box .leftside .content .heading-small{
+  font-size: 24px;
+}
+
+.header-box .rightside{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width: 768px){
+  .header-box .rightside{
+      width: 100%;
+      text-align: center;
+  }
+}
+
+.header-box .rightside .btn, .header-box .rightside .btn:hover{
+  width: 100px;
+  margin-bottom: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.date-section{
+  color: #fff;
+}
+
+.date-section span{
+  margin: 4px;
+}
+
+/* signup */
+@media(max-width: 539px){
+  .mybtn2{
+      width: 100%;
+  }
+}
+
+.error-msg{
+  color: red;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.welcome-div{
+  color: #fff;
+  letter-spacing: 0.09em;
+}
+
+/* todo */
+.todo{
+  background-color: #e4e4e4;
+  font-weight: 600;
+  font-size: 16px; 
+  margin: 10px 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo .actions-div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.todo .actions-div div{
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.delete-btn{
+  color: rgb(165, 2, 2);
+  cursor: pointer;    
+}
+
+.modal-container{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container .modal{
+  display: block;
+  width: 70%;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 60px 15%;
+}
+
+@media(max-width: 768px){
+  .modal-container .modal{
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      border-radius: 0px;
+  }
+}
+
+.modal-container .modal .header{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-container .modal .header .update-text{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.modal-container .modal .header .close-btn{
+  color: rgb(165, 2, 2);
+  cursor: pointer;
+}
